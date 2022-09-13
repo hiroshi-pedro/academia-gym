@@ -1,0 +1,528 @@
+/*Laranja #FF831B,
+Vermelho #FF3042,
+Azul #203F4C*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', cursive;      fonte grossa*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+
+:root {
+    --fonte-1:  'Bebas Neue', cursive;
+    --fonte-2: 'Heebo', sans-serif;
+    --Laranja: #FF831B;
+    --Vermelho: #FF3042;
+    --Azul: #203F4C;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 0 15px;
+    background-color: #203F4C;
+    padding: 15px 0;
+}
+
+nav.nav-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-nav {
+    display: block;
+    width: max-content;
+    height: 70px;
+    margin: auto 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.753);
+}
+.logo-nav img{
+    height: 100%;
+}
+
+nav.nav-desktop ul {
+    display: flex;
+    list-style: none;
+    height: 100%;;
+    padding: 25px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+nav.nav-desktop ul li {
+    margin-right: 35px;
+    text-decoration: none;
+}
+
+#lidu {
+    margin-right: 0px;
+}
+
+nav.nav-desktop ul li a {
+    color: white;
+    transition: 0.3s;
+}
+
+nav.nav-desktop ul li a:hover {
+    border-bottom: 2px solid #FF831B;
+    text-shadow: 0px 0px 2px ;
+}
+
+.container-nav-celular {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav.nav-desktop {
+        display: none;
+    }
+
+    .container-nav-celular {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .header-nav-celular {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-nav-celular span {
+        font-size: 60px;
+        color: white;
+    }
+
+    header {
+        width: 100%;
+        padding: 20px 15px;
+        background-color: #203F4C;
+    }
+
+    nav.nav-celular{
+        background-color: #203F4C;
+        width: 100%;
+        position: absolute;
+        top: 110px;
+        left: 0%;
+        display: none;
+        z-index: 1;
+    }
+
+    nav.nav-celular ul {
+        list-style: none; 
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+    nav.nav-celular ul li {
+        margin-top: 50px;
+    }
+
+    nav.nav-celular ul li a {
+        color: white;
+        font-size: 45px;
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+/*Slider*/
+.containerproje{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Slide academia logo*/
+
+.conteudo-slide-1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.academia-logo-1-1 {
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.academia-logo-1-1 img {
+    width: 70px;
+}
+
+.academia-logo-1-1 h2 {
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.carta-na-manga-text {
+    color: white;
+    font-size: 25px;
+    font-family: var(--fonte-1);
+    margin-top: 70px;
+    text-shadow: 0px 0px 5px var(--Laranja);
+}
+
+.carta-na-manga-text span {
+    color: var(--Laranja);
+}
+
+.academia-gym {
+    font-family: var(--fonte-1);
+    color: var(--Laranja);
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+/*Slide muay thay*/
+
+.conteudo-slide-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-1-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.slide-1-logo img {
+    margin-top: 10px;
+    width: 50px;
+}
+
+.text-luta-2 {
+    width: fit-content;
+    max-width: 100%;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-family: var(--fonte-1);
+    letter-spacing: 2px;
+    font-size: 19px;
+    margin-top: 35px;
+}
+
+.text-luta-2 span {
+    color: red;
+}
+
+.img-lutador-anime {
+    width: 100px;
+}
+
+.foto-lutador-mauy-thay h2 {
+    color: white;
+    font-family: var(--fonte-1);
+    font-size: 25px;
+}
+
+.botao-luta-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%
+}
+
+.botao-luta {
+    width: 140px;
+    background-color: var(--Laranja);
+    color: white;
+    font-family: var(--fonte-2);
+    font-size: 25px;
+    padding: 7px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10%;
+    transition: 0.5s;
+}
+
+.botao-luta:hover {
+    background-color: #FF3042;
+}
+
+/*Slide progeramação*/
+
+.conteudo-slide-3 {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-logo-musculacao {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.slide-logo-musculacao img {
+    width: 60px;
+}
+
+.text-musculacao {
+    width: 100%;
+    color: white;
+    font-family: var(--fonte-1);
+    font-size: 45px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-musculacao-2 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text-musculacao-2 h2 {
+    font-size: 40px;
+    font-family: var(--fonte-1);
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px var(--Laranja);
+}
+
+.text-musculacao-2 h3 {
+    color: white;
+    font-size: 35px;
+    font-family: var(--fonte-2);
+}
+
+.text-musculacao-2 h3 span {
+    color: var(--Laranja);
+}
+
+.text-musculacao-2 h3 span .span-musculacao {
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.botao-musculaçao {
+    margin-top: 80px;
+    width: 100%;
+} 
+
+.botao-musculaçao button {
+    width: 170px;
+    height: 50px;
+    background-color: var(--Laranja);
+    border: none;
+    border-radius: 5px;
+}
+
+.botao-musculaçao button a {
+    font-family: var(--fonte-2);
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/*palnos-slide*/
+
+.containerproje .slide-container .slide{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.slide-container {
+    height: 81vh;
+}
+
+.contentproje {
+    width: 100%;
+    height: 100%;
+}
+
+.containerproje .slide-container .slide .contentproje{
+    animation: slideContent .4s linear .4s backwards;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+}
+
+.containerproje .slide-container{
+    display: none;
+}
+
+.containerproje .slide-container.active{
+    display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide{
+    background: url(imagens/1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: left;
+}
+
+.containerproje .slide-container:nth-child(2) .slide{
+    background: url(imagens/2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.containerproje .slide-container:nth-child(3) .slide{
+    background: url(imagens/3.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.containerproje #prev, 
+.containerproje #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.containerproje #prev:hover, 
+.containerproje #next:hover{
+    background: var(--Laranja);
+}
+.containerproje #prev{
+    left: 20px;
+}
+
+.containerproje #next{
+    right: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .containerproje #prev{
+        left: 0px;
+        top: 80%;
+    }
+
+    .containerproje #next {
+        right: 0%;
+        top: 80%;
+    }
+
+    .slide-container {
+        height: 76vh;
+    }
+}
+
+/*Slider terminado*/
+
+.themiis-home {
+    width: 100%;
+    background-color: var(--Azul);
+    padding-top: 100px;
+}
+
+.conteudo-themiss-home {
+    width: 100%;
+    padding: 0 6%;
+}
+
+.titulo-conteudo-themiss-home {
+    text-align: center;
+    color: var(--Laranja);
+    font-family: var(--fonte-1);
+}
+
+.titulo-conteudo-themiss-home h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.texto-conteudo-themiss-home {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: auto
+}
+
+.texto-conteudo-themiss-home-p1 {
+    color: white;
+    font-size: 19px;
+    font-family: var(--fonte-2);
+}
+
+.texto-conteudo-themiss-home-p2 {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px
+}
+
+.texto-conteudo-themiss-home-p2 img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.produtos-cards-home {
+    width: 100%; 
+    text-align: center;
+}
+
+.card-single-product {
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    padding: 10px;
+    height: 550px;
+    margin: auto;
+}
+
+.card-single-product-img {
+    width: 100%;
+}
+
+.card-single-product-img img {
+    width: 100%;
+}
