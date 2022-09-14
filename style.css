@@ -565,21 +565,26 @@ nav.nav-desktop ul li a:hover {
 
 /*Depoimentos*/
 
-.depoimentos-home {
-    margin-top: 100px;
-    padding: 0 5%;
+.depoimentos-home  {
+    margin-top: 130px;
 }
 
 .wrapper {
     background-color: #ffffff;
+    position: relative;
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
     border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 130px;
     box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
-    margin: auto;
-    width: 100%;
-    max-width: 500px;
+    display: flex;
   }
   .testimonial-container {
     width: 85%;
+    height: 100%;
     position: relative;
     margin: auto;
     padding: 1.8em 1.2em;
@@ -589,7 +594,7 @@ nav.nav-desktop ul li a:hover {
     height: 2.2em;
     width: 2.2em;
     background-color: #ffffff;
-    position: relative;
+    position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -598,13 +603,12 @@ nav.nav-desktop ul li a:hover {
     box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
     cursor: pointer;
     border-radius: 50%;
-    top: -120px;
   }
   button#next {
-    right: -65vw;
+    right: -1.1em;
   }
   button#prev {
-    left: -5vw;
+    left: -1.1em;
   }
   .testimonial-container p {
     color: #8c8c90;
