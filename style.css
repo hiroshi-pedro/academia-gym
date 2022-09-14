@@ -567,6 +567,7 @@ nav.nav-desktop ul li a:hover {
 
 .depoimentos-home  {
     margin-top: 130px;
+    font-family: var(--fonte-2);
 }
 
 .wrapper {
@@ -604,10 +605,10 @@ nav.nav-desktop ul li a:hover {
     cursor: pointer;
     border-radius: 50%;
   }
-  button#next {
+  button#nextd {
     right: -1.1em;
   }
-  button#prev {
+  button#prevd {
     left: -1.1em;
   }
   .testimonial-container p {

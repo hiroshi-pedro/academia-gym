@@ -1,7 +1,5 @@
 //Testimonial Data
 
-alert('ksdjfkdjsfljdsfljd')
-
 const testimonials = [
   {
     name: "Eva Sawyer",
@@ -39,8 +37,8 @@ let i = 0;
 let j = testimonials.length;
 
 let testimonialContainer = document.getElementById("testimonial-container");
-let nextBtn = document.getElementById("next");
-let prevBtn = document.getElementById("prev");
+let nextBtn = document.getElementById("nextd");
+let prevBtn = document.getElementById("prevd");
 
 nextBtn.addEventListener("click", () => {
   i = (j + i + 1) % j;
