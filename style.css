@@ -600,7 +600,7 @@ nav.nav-desktop ul li a:hover {
     top: 0;
     bottom: 0;
     border: none;
-    color: #0a69ed;
+    color: var(--Laranja);
     box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
     cursor: pointer;
     border-radius: 50%;
@@ -625,7 +625,7 @@ nav.nav-desktop ul li a:hover {
     width: 4.4em;
   }
   .testimonial-container h3 {
-    color: #2d3d67;
+    color: var(--Laranja);
     font-size: 1em;
     text-align: center;
   }
@@ -635,6 +635,10 @@ nav.nav-desktop ul li a:hover {
     letter-spacing: 0.03em;
     font-weight: 400;
     text-align: center;
+  }
+
+  .depoimentos-home .titulo-conteudo-themiss-home h1 {
+    margin-bottom: 120px;
   }
   @media screen and (max-width: 650px) {
     .wrapper {
