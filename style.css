@@ -513,16 +513,44 @@ nav.nav-desktop ul li a:hover {
 .card-single-product {
     width: 100%;
     max-width: 500px;
-    color: white;
-    padding: 10px;
-    height: 550px;
+    color: black;
+    padding: 15px;
     margin: auto;
+    background-color: white;
+    font-family: var(--fonte-2);
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px;
 }
 
 .card-single-product-img {
     width: 100%;
+    border-radius: 7px;
 }
 
 .card-single-product-img img {
     width: 100%;
+}
+
+.card-single-product-textb {
+    width: 100%;
+}
+
+.card-single-product-textb input {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 7px;
+    font-family: var(--fonte-2);
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #FF831B;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px;
+    transition: 0.5s;
+}
+
+.card-single-product-textb input:hover {
+    background-color: #d35f00;
 }
