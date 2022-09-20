@@ -71,6 +71,21 @@ nav.nav-desktop ul li {
     margin-right: 0px;
 }
 
+.whatsApp-contato {
+  position: fixed;
+  font-size: 50px;
+  left: 5%;
+  top: 90%;
+  color: white;
+  z-index: 3;
+  background-color: #a4c639;
+  padding: 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 nav.nav-desktop ul li a {
     color: white;
     transition: 0.3s;
