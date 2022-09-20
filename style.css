@@ -877,10 +877,92 @@ footer ul {
 } 
 
 .musculacao-beneficios-single {
-  width: 32%;
+  width: 33.33%;
   text-align: center;
   font-size: 19px;
   padding: 3%;
   margin: auto;
   font-family: var(--fonte-2);
+}
+
+.musculacao-beneficios-single p {
+  border-bottom: 3px solid var(--Laranja);
+  padding-bottom: 25px;
+}
+
+.musculacao-text {
+  text-align: center;
+  font-family: var(--fonte-2);
+  margin-top: 20px;
+  padding: 0 4%;
+  text-align: justify;
+}
+
+.musculacao-text h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+} 
+
+.card-planos {
+  width: 100%;
+  font-family: var(--fonte-2);
+}
+
+.card-planos h1 {
+  margin-left: 3%;
+  margin-top: 35px;
+  font-size: 30px;
+  color: var(--Laranja);
+} 
+
+.card-planos-container {
+  width: 100%;
+}
+
+.card-planos-single {
+  width: 85%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 0px 9px;
+  border-radius: 7px;
+}
+
+.card-planos-single-1 {
+  background-image: linear-gradient(to bottom right, #007baf, #003146);
+  border-radius: 7px 7px 0px 0px;
+}
+
+.card-planos-single-1 h1 {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.card-planos-single-2-1 {
+  color: #2b2b2b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-planos-single-2-1 h2 {
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+.card-planos-single-2-1 button {
+  background-image: linear-gradient(to bottom right, #007baf, #003146);
+  width: 70%;
+  height: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.card-planos-single-2-1 button:hover {
+  background-image: linear-gradient(to bottom right, #003146, #007baf);
 }
