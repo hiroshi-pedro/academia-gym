@@ -911,7 +911,7 @@ footer ul {
 
 .card-planos h1 {
   margin-left: 3%;
-  margin-top: 35px;
+  margin-top: 45px;
   font-size: 30px;
   color: var(--Laranja);
 } 
@@ -926,6 +926,7 @@ footer ul {
   margin: auto;
   box-shadow: 0px 0px 9px;
   border-radius: 7px;
+  margin-bottom: 70px;
 }
 
 .card-planos-single-1 {
@@ -952,17 +953,62 @@ footer ul {
 
 .card-planos-single-2-1 button {
   background-image: linear-gradient(to bottom right, #007baf, #003146);
-  width: 70%;
-  height: 40px;
+  width: 80%;
+  height: 65px;
   color: white;
   font-size: 25px;
   font-weight: 700;
   border: none;
   border-radius: 7px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .card-planos-single-2-1 button:hover {
   background-image: linear-gradient(to bottom right, #003146, #007baf);
+}
+
+.card-planos-single-2-2 {
+  width: 100%;
+  padding: 4%;
+}
+
+.card-planos-single-2-2 p {
+  font-weight: 600;
+  color: black;
+  font-size: 20px;
+}
+
+.card-planos-single-2-2 ul {
+  list-style: none;
+  margin-left: 15px;
+  font-size: 19px;
+  margin-top: 20px;
+}
+
+.card-planos-single-2-2 ul li {
+  margin-bottom: 10px;
+}
+
+.card-planos-single-2-2 ul i {
+  color: green;
+  position: relative;
+  float: right;
+}
+
+.footer-planos, .footer-planos-d1{
+  width: 100%;
+  text-align: center;
+  font-family: var(--fonte-2);
+}
+
+.footer-planos-d1 a {
+  color: #007baf;
+  cursor: pointer;
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+.footer-planos-d1 h1 {
+  margin-top: 1em;
 }
