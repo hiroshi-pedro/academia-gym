@@ -31,8 +31,11 @@ html,body {
 header {
     width: 100%;
     padding: 0 15px;
-    background-color: #203F4C;
+    background-image: linear-gradient(to bottom ,#003146ad 40%, rgba(0, 128, 0, 0));
     padding: 15px 0;
+    position: absolute;
+    position: fixed;
+    z-index: 3;
 }
 
 nav.nav-desktop {
@@ -115,6 +118,8 @@ nav.nav-desktop ul li a:hover {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 2;
     }
 
     .header-nav-celular span {
@@ -125,15 +130,16 @@ nav.nav-desktop ul li a:hover {
     header {
         width: 100%;
         padding: 20px 15px;
-        background-color: #203F4C;
+        background-image: linear-gradient(#00314696 30%, rgba(0, 128, 0, 0));
     }
 
     nav.nav-celular{
-        background-color: #203F4C;
+        background-color: var(--Azul);
         width: 100%;
         position: absolute;
-        top: 110px;
+        top: 0px;
         left: 0%;
+        padding-top: 110px;
         display: none;
         z-index: 1;
     }
@@ -1026,4 +1032,70 @@ footer ul {
 
 .footer-planos-d1 h1 {
   margin-top: 1em;
+}
+
+.main-lutas {
+  width: 100%;
+}
+
+.imagem-banner {
+  width: 100%;
+  height: 50vh;
+  background-color: #757575;
+}
+
+.conteudo-luta {
+  width: 100%;
+}
+
+.titulos-lutas {
+  width: 100%;
+  text-align: center;
+  font-family: var(--fonte-1);
+  color: var(--Laranja);
+  letter-spacing: 2px;
+}
+
+.titulos-lutas h1 {
+  font-size: 50px;
+  margin: 30px;
+}
+
+.titulos-lutas h2 {
+  color: black;
+  font-size: 35px;
+}
+
+.text-luta-container  {
+  width: 100%;
+  padding: 0 4%;
+  max-width: 600px;
+  margin: auto;
+  font-family: var(--fonte-2);
+  text-align: center;
+}
+
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+}
+h2{
+  font-family:sans-serif;
+  color:#fff;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+.wrapper .slick-dots li button:before {
+  font-size:20px;
+  color:white;
 }
