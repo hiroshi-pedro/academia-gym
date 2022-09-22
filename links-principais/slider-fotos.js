@@ -1,5 +1,7 @@
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });
+$(function(){
+  $(".your-class").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+  })
+})
