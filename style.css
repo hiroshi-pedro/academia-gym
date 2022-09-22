@@ -12,9 +12,11 @@ Azul #203F4C*/
 :root {
     --fonte-1:  'Bebas Neue', cursive;
     --fonte-2: 'Heebo', sans-serif;
-    --Laranja: #FF831B;
-    --Vermelho: #FF3042;
-    --Azul: #203F4C;
+    --color-1: #F2357B;
+    --color-2: #F21313;
+    --color-3: #281040;
+    --color-4: #2405F2;
+    --color-5: #110273;
   }
 
 *{
@@ -31,7 +33,7 @@ html,body {
 header {
     width: 100%;
     padding: 0 15px;
-    background-color: #203F4C;
+    background-color: var(--color-3);
     padding: 15px 0;
 }
 
@@ -73,17 +75,17 @@ nav.nav-desktop ul li {
 
 .whatsApp-contato {
   position: fixed;
-  font-size: 50px;
+  font-size: 40px;
   left: 5%;
-  top: 90%;
+  top: 85%;
   color: white;
   z-index: 3;
   background-color: #a4c639;
-  padding: 5px;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   text-align: center;
+  padding: 10px;
 }
 
 nav.nav-desktop ul li a {
@@ -92,7 +94,7 @@ nav.nav-desktop ul li a {
 }
 
 nav.nav-desktop ul li a:hover {
-    border-bottom: 2px solid #FF831B;
+    border-bottom: 2px solid var(--color-1);
     text-shadow: 0px 0px 2px ;
 }
 
@@ -125,11 +127,11 @@ nav.nav-desktop ul li a:hover {
     header {
         width: 100%;
         padding: 20px 15px;
-        background-color: #203F4C;
+        background-color: var(--color-3);
     }
 
     nav.nav-celular{
-        background-color: #203F4C;
+        background-color: var(--color-3);
         width: 100%;
         position: absolute;
         top: 110px;
@@ -194,12 +196,12 @@ nav.nav-desktop ul li a:hover {
 }
 
 .carta-na-manga-text span {
-    color: var(--Laranja);
+    color: var(--color-1);
 }
 
 .academia-gym {
     font-family: var(--fonte-1);
-    color: var(--Laranja);
+    color: var(--color-1);
     font-size: 30px;
     margin-top: 70px;
 }
@@ -234,7 +236,7 @@ nav.nav-desktop ul li a:hover {
 }
 
 .text-luta-2 span {
-    color: red;
+    color: var(--color-2);
 }
 
 .img-lutador-anime {
@@ -257,7 +259,7 @@ nav.nav-desktop ul li a:hover {
 
 .botao-luta {
     width: 140px;
-    background-color: var(--Laranja);
+    background-color: var(--color-1);
     color: white;
     font-family: var(--fonte-2);
     font-size: 25px;
@@ -270,7 +272,7 @@ nav.nav-desktop ul li a:hover {
 }
 
 .botao-luta:hover {
-    background-color: #FF3042;
+    background-color: var(--color-2);
 }
 
 /*Slide progeramação*/
@@ -320,7 +322,7 @@ nav.nav-desktop ul li a:hover {
 }
 
 .text-musculacao-2 h3 span {
-    color: var(--Laranja);
+    color: var(--color-1);
 }
 
 .text-musculacao-2 h3 span .span-musculacao {
@@ -336,7 +338,7 @@ nav.nav-desktop ul li a:hover {
 .botao-musculaçao button {
     width: 170px;
     height: 50px;
-    background-color: var(--Laranja);
+    background-color: var(--color-1);
     border: none;
     border-radius: 5px;
 }
@@ -468,7 +470,7 @@ nav.nav-desktop ul li a:hover {
 
 .themiis-home {
     width: 100%;
-    background-color: var(--Azul);
+    background-color: var(--color-3);
     padding-top: 100px;
 }
 
@@ -479,7 +481,7 @@ nav.nav-desktop ul li a:hover {
 
 .titulo-conteudo-themiss-home {
     text-align: center;
-    color: var(--Laranja);
+    color: var(--color-1);
     font-family: var(--fonte-1);
 }
 
@@ -566,7 +568,7 @@ nav.nav-desktop ul li a:hover {
     font-family: var(--fonte-2);
     font-weight: 900;
     font-size: 20px;
-    background-color: #FF831B;
+    background-color: var(--color-1);
     border: none;
     cursor: pointer;
     letter-spacing: 1px;
@@ -575,7 +577,7 @@ nav.nav-desktop ul li a:hover {
 }
 
 .card-single-product-textb input:hover {
-    background-color: #d35f00;
+    background-color: var(--color-1);
 }
 
 /*Depoimentos*/
@@ -615,7 +617,7 @@ nav.nav-desktop ul li a:hover {
     top: 0;
     bottom: 0;
     border: none;
-    color: var(--Laranja);
+    color: var(--color-1);
     box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
     cursor: pointer;
     border-radius: 50%;
@@ -640,7 +642,7 @@ nav.nav-desktop ul li a:hover {
     width: 4.4em;
   }
   .testimonial-container h3 {
-    color: var(--Laranja);
+    color: var(--color-1);
     font-size: 1em;
     text-align: center;
   }
@@ -729,7 +731,7 @@ footer ul {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: #ff5e14;
+  color: var(--color-1);
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -817,7 +819,7 @@ footer ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: var(--color-1);
 }
 .footer-widget ul li {
   display: inline-block;
@@ -825,7 +827,7 @@ footer ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: var(--color-1);
 }
 .footer-widget ul li a {
   color: #878787;
@@ -845,9 +847,9 @@ footer ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background: var(--color-1);
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid var(--color-1);
     top: 0;
 }
 .subscribe-form button i {
@@ -865,14 +867,14 @@ footer ul {
   color: #878787;
 }
 .copyright-text p a{
-  color: #ff5e14;
+  color: var(--color-1);
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: var(--color-1);
 }
 .footer-menu li a {
   font-size: 14px;
@@ -928,7 +930,7 @@ footer ul {
   margin-left: 3%;
   margin-top: 45px;
   font-size: 30px;
-  color: var(--Laranja);
+  color: var(--color-1);
 } 
 
 .card-planos-container {
@@ -1046,7 +1048,7 @@ footer ul {
   width: 100%;
   text-align: center;
   font-family: var(--fonte-1);
-  color: var(--Laranja);
+  color: var(--color-1);
   letter-spacing: 2px;
 }
 
@@ -1081,9 +1083,8 @@ footer ul {
   margin: auto;
 }
 
-.your-class div {
+.your-class > div {
   width: 100%;
-  height: 200px;
   background-color: white;
   border: 1px solid black;
   margin: auto;
