@@ -1147,7 +1147,7 @@ footer ul {
   max-width: 600px;
   margin: auto;
   font-family: var(--fonte-2);
-  padding-top: 120px;
+  padding: 120px 3% 0 3%;
 }
 
 .textos-sobre h1 {
