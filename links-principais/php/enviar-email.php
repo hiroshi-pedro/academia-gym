@@ -28,5 +28,11 @@
   //Enviar
   mail($destino, $assunto, $arquivo, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+  if(mail($destino, $assunto, $arquivo, $headers)){
+    echo("Email enviado com sucesso!");
+  }else{
+    echo("O Email não pode ser enviado");
+  }
+  
+  echo "<meta http-equiv='refresh' content='0;URL=../contato.html'>";
 ?>
