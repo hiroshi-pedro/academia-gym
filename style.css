@@ -361,6 +361,10 @@ nav.nav-desktop ul li a:hover {
 
 /*palnos-slide*/
 
+.slide-container {
+  height: 90vh;
+}
+
 .containerproje .slide-container:nth-child(1) .slide{
     background: url(imagens/1.png);
     background-size:cover;
