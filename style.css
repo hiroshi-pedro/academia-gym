@@ -29,6 +29,8 @@ Azul #203F4C*/
 html,body {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
 }
 
 .body-index {
@@ -84,7 +86,7 @@ nav.nav-desktop ul li {
   left: 5%;
   top: 85%;
   color: white;
-  z-index: 3;
+  z-index: 2;
   background-color: #a4c639;
   width: 60px;
   height: 60px;
@@ -164,7 +166,7 @@ nav.nav-desktop ul li a:hover {
 
 /*Slider*/
 .containerproje{
-    z-index: 0;
+    z-index: 3;
     width: 100%;
     height: 90vh;
 }
@@ -217,7 +219,7 @@ nav.nav-desktop ul li a:hover {
 .conteudo-slide-2 {
     width: 100%;
     height: 100%;
-    padding: 10%;
+    padding: 0 5%;
 }
 
 .slide-1-logo {
@@ -295,6 +297,9 @@ nav.nav-desktop ul li a:hover {
     width: 100%;
     text-align: center;
     padding-top: 20px;
+    color: white;
+    font-family: var(--fonte-1);
+    font-size: 25px;
 }
 
 .slide-logo-musculacao img {
@@ -367,7 +372,7 @@ nav.nav-desktop ul li a:hover {
   width: 100%;
 }
 
-.containerproje .slide-container:nth-child(1) .slide{
+.containerproje .slide-container1 .slide{
     background: url(imagens/1.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -376,16 +381,16 @@ nav.nav-desktop ul li a:hover {
     background-position: left;
 }
 
-.containerproje .slide-container:nth-child(2) .slide{
+.containerproje .slide-container2 .slide{
     background: url(imagens/2.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     background-position: center;
 }
 
-.containerproje .slide-container:nth-child(3) .slide{
+.containerproje .slide-container3 .slide{
     background: url(imagens/3.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -401,6 +406,7 @@ nav.nav-desktop ul li a:hover {
   position: relative;
   top: -20vh;
   padding: 0 8%;
+  z-index: 4;
 }
 
 .botao-muda-slide-topo #prev, 
@@ -419,6 +425,10 @@ nav.nav-desktop ul li a:hover {
 
 .containerproje #next{
     right: 20px;
+}
+
+.slide {
+  height: 100%;
 }
 
 
@@ -689,6 +699,7 @@ nav.nav-desktop ul li a:hover {
 footer {
     padding: 3%;
     font-family: var(--fonte-2);
+    z-index: 3;
 }
 
 footer ul {
