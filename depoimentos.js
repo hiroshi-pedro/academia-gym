@@ -2,30 +2,26 @@
 
 const testimonials = [
   {
-    name: "Eva Sawyer",
-    job: "CEO, Fashworks",
-    image: "profile-image-1.png",
+    name: "Pedro Hiroshi",
+    job: "aluno",
     testimonial:
-      "Neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur",
+      "Uma academia para todos os tipos de pessoas, o Melhor atendimento, e boa qualidade dos aparelhos. Na academia Themis treinar se torna a melhor hora do dia ;)",
   },
   {
-    name: "Katey Topaz",
-    job: "Developer, TechCrew",
-    image: "profile-image-2.png",
+    name: "Gilherme Henrique",
+    job: "Aluno",
     testimonial:
-      "Elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla",
+      "Academia muito boa, ambiente bom me sinto até feliz treinando lá agora que sofreu bastante reformas e mudanças no interior e exterior da academia, recomendo muito!",
   },
   {
-    name: "Jae Robin",
-    job: "UI Designer, Affinity Agency",
-    image: "profile-image-3.png",
+    name: "Kauã da Silva Virgilio",
+    job: "Aluno",
     testimonial:
-      "Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis",
+      "Academia muito boa, recebeu uma reforma que mudou o jeito que eu olhava pra ela e ficou muito bonito, e as máquinas são muito boas também, 10/10 para a academia e as pessoas que cuidaram dela",
   },
   {
     name: "Nicola Blakely",
     job: "CEO,Zeal Wheels",
-    image: "profile-image-4.png",
     testimonial:
       "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
   },
@@ -52,7 +48,6 @@ prevBtn.addEventListener("click", () => {
 let displayTestimonial = () => {
   testimonialContainer.innerHTML = `
     <p>${testimonials[i].testimonial}</p>
-    <img src=${testimonials[i].image}>
     <h3>${testimonials[i].name}</h3>
     <h6>${testimonials[i].job}</h6>
   `;
