@@ -723,12 +723,13 @@ footer ul {
 .cta-text {
   padding-left: 15px;
   display: inline-block;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
 }
 .cta-text h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 2px;
 }
 .cta-text span {
   color: #757575;
