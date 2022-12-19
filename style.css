@@ -12,11 +12,11 @@ Azul #203F4C*/
 :root {
     --fonte-1:  'Bebas Neue', cursive;
     --fonte-2: 'Heebo', sans-serif;
-    --color-1: #F2357B;
-    --color-2: #F21313;
-    --color-3: #281040;
-    --color-4: #2405F2;
-    --color-5: #110273;
+    --color-1: #F26800;
+    --color-2: #053D38;
+    --color-3: #14140F;
+    --color-4: #34675C;
+    --color-5: #053D38;
   }
 
 *{
@@ -251,7 +251,7 @@ nav.nav-desktop ul li a:hover {
 }
 
 .text-luta-2 span {
-    color: var(--color-2);
+    color: var(--color-1);
 }
 
 .img-lutador-anime {
@@ -715,7 +715,7 @@ footer ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: black;
   position: relative;
 }
 .footer-cta {
@@ -1049,7 +1049,7 @@ footer ul {
   width: 100%;
   height: 50vh;
   background-color: #757575;
-  background-image: url(imagens/lutas/301673663_600054504933693_7670631581633470428_n.jpg);
+  background-image: url(imagens/lutas/slides/jiu-jitsu/timothy-eberly-7MRajrPiTqw-unsplash.jpg);
   background-position: center 40%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1166,7 +1166,8 @@ footer ul {
 .imagem-topo-sobre {
   width: 100%;
   height: 400px;
-  background-color: #cacaca;
+  background-image: url(./imagens/index/fotos_academia/jelmer-assink-gzeTjGu3b_k-unsplash.jpg);
+  background-size: cover;
 }
 
 .textos-sobre {
@@ -1201,7 +1202,8 @@ footer ul {
   width: 90%;
   max-width: 450px;
   height: 250px;
-  background-color: #cecece;
+  background-image: url(./imagens/index/fotos_academia/samuel-girven-fqMu99l8sqo-unsplash.jpg);
+  background-size: cover;
   border-radius: 7px;
   box-shadow: 0px 0px 15px;
   margin: 65px auto;
