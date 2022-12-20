@@ -893,8 +893,8 @@ footer ul {
 .musculacao-beneficios-single {
   width: 33.33%;
   text-align: center;
-  font-size: 18px;
-  padding: 3%;
+  font-size: .7em;
+  padding: 1%;
   margin: auto;
   font-family: var(--fonte-2);
 }
