@@ -56,11 +56,15 @@ nav.nav-desktop {
     width: max-content;
     height: 70px;
     margin: auto 0;
-    color: var(--color-1);
+    font-size: 3em;
 }
 .logo-nav i{
     height: 100%;
     color: var(--color-1);
+}
+
+.logo-nav p {
+  color: wheat;
 }
 
 nav.nav-desktop ul {
@@ -307,9 +311,10 @@ nav.nav-desktop ul li a:hover {
     font-size: 25px;
 }
 
-.slide-logo-musculacao img {
-    width: 60px;
+.slide-logo-musculacao i {
+    font-size: 60px;
     margin: auto;
+    color: var(--color-1);
 }
 
 .text-musculacao {
@@ -1028,6 +1033,7 @@ footer ul {
   width: 100%;
   text-align: center;
   font-family: var(--fonte-2);
+  color: #007baf;
 }
 
 .footer-planos-d1 a {
