@@ -8,3 +8,5 @@ $(function(){
          $(this).hide();
       });
 })
+
+alert('Site feito por Pedro Hiroshi Yoshida, para portifólio')
