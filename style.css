@@ -881,7 +881,9 @@ footer ul {
 .banner-plano {
   width: 100%;
   height: 300px;
-  background-color: #8c8c90;
+  background-image: url(./imagens/index/fotos_academia/samuel-girven-fqMu99l8sqo-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
 }
 
 .musculacao-beneficios {
