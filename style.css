@@ -890,6 +890,7 @@ footer ul {
   max-width: 100%;
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
 } 
 
 .musculacao-beneficios-single {
