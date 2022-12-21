@@ -55,7 +55,7 @@
         <main class="main-contato">
             <div class="login-box">
                 <h2>Contato</h2>
-                <form action="php/enviar-email.php" method="post" class="card">
+                <form action="https://formsubmit.co/pedrohiroshiyoshidda22@gmail.com" method="POST" class="card">
                   <div class="user-box">
                     <input type="text" name="nome" required="">
                     <label class="user-box-l">Nome</label>
@@ -73,8 +73,12 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <Button class="buttom-fotm-contato">Enviar</Button>
+                    <Button type="submit" class="buttom-fotm-contato">Enviar</Button>
                   </a>
+
+                  <input type="hidden" name="_subject" value="Novo envio!">
+                  <input type="text" name="_honey" style="display:none">
+                  <input type="hidden" name="_captcha" value="false">
                 </form>
               </div>
         </main>

@@ -1,38 +1,26 @@
 <?php
-  //Variáveis
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $mensagem = $_POST['mensagem'];
-  $data_envio = date('d/m/Y');
-  $hora_envio = date('H:i:s');
+	$to = "pedroyoshida22@gmail.com"; //destinário que receberá o e-mail
 
-  //Compo E-mail
-  $arquivo = "
-    <html>
-      <p><b>Nome: </b>$nome</p>
-      <p><b>E-mail: </b>$email</p>
-      <p><b>Mensagem: </b>$mensagem</p>
-      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
-    </html>
-  ";
-  
-  //Emails para quem será enviado o formulário
-  $destino = "pedrohiroshiyoshidda22@gmail.com";
-  $assunto = "Contato pelo Site";
+	$assunto = "Formulário do site";
 
-  //Este sempre deverá existir para garantir a exibição correta dos caracteres
-  $headers  = "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-  $headers .= "From: $nome <$email>";
+	$mensagem  = $_POST['mensagem']; 
+	$mensagem .= "<hr>"; 
+	$mensagem .= "Enviado por: ".$_POST['nome'];
 
-  //Enviar
-  mail($destino, $assunto, $arquivo, $headers);
-  
-  if(mail($destino, $assunto, $arquivo, $headers)){
-    echo("Email enviado com sucesso!");
-  }else{
-    echo("O Email não pode ser enviado");
-  }
-  
-  echo "<meta http-equiv='refresh' content='0;URL=../contato.html'>";
-?>
+	$email = $_POST['email']; //remetente
+
+	$headers  = 'MIME-Version: 1.0';
+	$headers .= 'Content-type: text/html; charset=iso-8859-1';
+	$headers .= 'To: $to';
+	$headers .= 'From: $email';
+	$headers .= 'Reply-To: $email';
+	$headers .= 'X-Mailer: PHP/' . phpversion();
+
+
+	$status = mail($to, $assunto, $mensagem, $headers);
+
+	if($status==true){
+		print "Mensagem foi enviada com sucesso!";
+	}else{
+		print "Não foi possível enviar";
+	}
